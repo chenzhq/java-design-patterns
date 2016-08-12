@@ -1,8 +1,8 @@
 package test.com.chenzhq.builder;
 
-import static org.junit.Assert.*;
 import main.com.chenzhq.builder.Actor;
 import main.com.chenzhq.builder.ActorBuilder;
+import main.com.chenzhq.builder.ActorController;
 import main.com.chenzhq.builder.DevilBuilder;
 import main.com.chenzhq.builder.HeroBuilder;
 
@@ -51,5 +51,19 @@ public class ActorTest {
 		
 		System.out.println(hero.build().toString());
 		System.out.println(devil.build().toString());
+	}
+	
+	/**
+	 *  增加一个指挥者类 在该类中可以控制actor的构建过程，通过一个方法返回目标对象
+	 */
+	@Test
+	public void test3() {
+		ActorController controller = new ActorController();
+		Actor hero = controller.construct(new HeroBuilder());
+		Actor devil = controller.construct(new DevilBuilder());
+		System.out.println(hero.toString());
+		System.out.println(devil.toString());
+		
+		
 	}
 }
