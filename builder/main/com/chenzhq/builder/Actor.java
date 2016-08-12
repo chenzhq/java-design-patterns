@@ -1,12 +1,11 @@
 package main.com.chenzhq.builder;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class Actor {
 
 	private String type;
 	private String sex;
-	private String hairstyle;
+	private String hair;
 	private String face;
 	
 	public String getType() {
@@ -21,11 +20,11 @@ public class Actor {
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	public String getHairstyle() {
-		return hairstyle;
+	public String getHair() {
+		return hair;
 	}
-	public void setHairstyle(String hairstyle) {
-		this.hairstyle = hairstyle;
+	public void setHair(String hairstyle) {
+		this.hair = hairstyle;
 	}
 	public String getFace() {
 		return face;
@@ -36,7 +35,10 @@ public class Actor {
 	
 	@Override
 	public String toString() {
-		return ToStringBuilder.reflectionToString(this);
+		return "英雄类型：" + type 
+				+ "\n性别："+ sex 
+				+ "\n头发：" + hair 
+				+ "\n颜值：" + face;
 	}
 	
 	
