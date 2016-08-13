@@ -1,7 +1,8 @@
 package test.com.chenzhq.builder;
 
-import static org.junit.Assert.*;
-import main.com.chenzhq.builder2.*;
+import main.com.chenzhq.builder2.ActorBuilder;
+import main.com.chenzhq.builder2.DevilBuilder;
+import main.com.chenzhq.builder2.HeroBuilder;
 
 import org.junit.Before;
 import org.junit.BeforeClass;

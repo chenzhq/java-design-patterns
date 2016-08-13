@@ -66,6 +66,6 @@ public class ActorTest {
 	}
 	
 	public void test4() {
-		
+
 	}
 }
