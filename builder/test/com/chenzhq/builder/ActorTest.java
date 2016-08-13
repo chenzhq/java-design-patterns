@@ -1,10 +1,10 @@
 package test.com.chenzhq.builder;
 
-import main.com.chenzhq.builder.Actor;
-import main.com.chenzhq.builder.ActorBuilder;
-import main.com.chenzhq.builder.ActorController;
-import main.com.chenzhq.builder.DevilBuilder;
-import main.com.chenzhq.builder.HeroBuilder;
+import main.com.chenzhq.builder1.Actor;
+import main.com.chenzhq.builder1.ActorBuilder;
+import main.com.chenzhq.builder1.ActorController;
+import main.com.chenzhq.builder1.DevilBuilder;
+import main.com.chenzhq.builder1.HeroBuilder;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -63,7 +63,9 @@ public class ActorTest {
 		Actor devil = controller.construct(new DevilBuilder());
 		System.out.println(hero.toString());
 		System.out.println(devil.toString());
-		
-		
+	}
+	
+	public void test4() {
+
 	}
 }

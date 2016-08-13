@@ -1,4 +1,4 @@
-package main.com.chenzhq.builder;
+package main.com.chenzhq.builder1;
 
 /**
  * 建造者类 将actor的构造封装在其中一个方法中

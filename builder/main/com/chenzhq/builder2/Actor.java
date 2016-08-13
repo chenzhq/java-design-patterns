@@ -1,4 +1,4 @@
-package main.com.chenzhq.builder;
+package main.com.chenzhq.builder2;
 
 
 public class Actor {
@@ -38,7 +38,7 @@ public class Actor {
 		return "英雄类型：" + type 
 				+ "\n性别："+ sex 
 				+ "\n头发：" + hair 
-				+ "\n颜值：" + face;
+				+ "\n颜值：" + face + "\n";
 	}
 	
 	
